@@ -9,5 +9,11 @@ public class Main {
         Tiger simba = new Tiger("Simba", true, 2, "Tuesday", "India", 42);
         System.out.println("This " + simba.genderFull().toLowerCase() + " " + simba.getClass().getSimpleName().toLowerCase() + " is named " + simba.getName() + " and lives in cage " + simba.getCage());
         System.out.println(simba.getName() + " eats " + simba.eat("meat") + " and was last fed on" + simba.getLastFed());
+
+        Animal[] group = {sam, simba};
+        for (Animal x: group) {
+            System.out.println(x.getName() + " " + x.move());
+        }
+
     }
 }

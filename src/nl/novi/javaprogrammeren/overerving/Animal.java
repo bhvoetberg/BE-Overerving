@@ -1,20 +1,36 @@
 package nl.novi.javaprogrammeren.overerving;
 
+import javax.print.DocFlavor;
+
 public class Animal {
     private String name;
-    private boolean gender;
+    private boolean genderMale;
 
     public Animal(String name, boolean gender) {
         this.name = name;
-        this.gender = gender;
+        this.genderMale = gender;
     }
 
     //Methods
-    public void sound(String sound) {
-        System.out.println("The animal says: " + sound);
+    public String sound(String sound) {
+        return sound;
     }
 
+    public String move(){
+        return "moved 0,25m";
+    }
 
+    public String genderFull(){
+        if (genderMale = true) {
+            return "Male";
+        } else {
+            return "Female";
+        }
+    }
+
+    public String eat(String food) {
+        return food;
+    }
 
     //Getters & Setters
 
@@ -27,10 +43,10 @@ public class Animal {
     }
 
     public boolean isGender() {
-        return gender;
+        return genderMale;
     }
 
     public void setGender(boolean gender) {
-        this.gender = gender;
+        this.genderMale = gender;
     }
 }

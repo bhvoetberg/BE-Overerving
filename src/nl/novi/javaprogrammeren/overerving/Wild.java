@@ -1,11 +1,12 @@
 package nl.novi.javaprogrammeren.overerving;
 
-public class Wild {
+public class Wild extends Animal {
     private int cage;
     private String lastFed;
     private String country;
 
-    public Wild(int cage, String lastFed, String country) {
+    public Wild(String name, boolean gender, int cage, String lastFed, String country) {
+        super(name, gender);
         this.cage = cage;
         this.lastFed = lastFed;
         this.country = country;
